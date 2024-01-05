@@ -1,3 +1,10 @@
 @import './base.css';
 @tailwind components;
 @tailwind utilities;
+
+.vertical-class{
+         transform: rotate(-90deg);
+          transform-origin: left top;
+          white-space: nowrap;
+          height:400px;
+}

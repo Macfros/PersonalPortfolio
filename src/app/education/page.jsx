@@ -1,13 +1,16 @@
 
+import brikow from "@/images/brikow.svg";
+import TimeLine from "@/components/TimeLine";
+
 import PageIntro from "@/components/PageIntro";
 
 const Education = () => {
   return (
-
+       <>
        <PageIntro title="Education">
-       Bakwaas School
-       Bakwaas college
        </PageIntro>
+       <TimeLine />
+       </>
 
   )
 }

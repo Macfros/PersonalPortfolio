@@ -5,6 +5,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './node_modules/flowbite-react/**/*.js',
   ],
   theme: {
     extend: {
@@ -18,7 +19,16 @@ module.exports = {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      keyframes: {
+        moveline: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
+        }
+      },
+      animation : {
+        moveline : 'moveline 6s linear infinite'
+      }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };

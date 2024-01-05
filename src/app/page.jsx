@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn"
 import TechStack from "@/components/TechStack";
+import Button from "@/components/Button"
 
 export default function Home() {
   return (
@@ -18,6 +19,14 @@ export default function Home() {
     </Container>
 
     <TechStack />
+
+    <div className="flex justify-center items-center mt-5 h-20">
+     <Button href={process.env.RESUME_LINK} children="Resume" className="text-5xl h-[50px]
+     w-1/6"/>
+
+    </div>
+
+
     </main>
   )
 }
