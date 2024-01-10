@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn"
 import TechStack from "@/components/TechStack";
 import Button from "@/components/Button"
+import Typewriter from "@/components/Typewriter"
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
        <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
        Hi! I'm Akhil Raj
        </h1>
-       <p className="mt-6 text-xl text-neutral-600">
-       I'm a Full Stack Web Developer
-       </p>
+       <div className="mt-6 text-xl text-neutral-600">
+       <Typewriter />
+       </div>
      </FadeIn>
     </Container>
 
@@ -22,7 +23,7 @@ export default function Home() {
 
     <div className="flex justify-center items-center mt-5 h-20">
      <Button href={process.env.RESUME_LINK} children="Resume" className="text-5xl h-[50px]
-     w-1/6"/>
+     w-1/6" target="_blank"/>
 
     </div>
 

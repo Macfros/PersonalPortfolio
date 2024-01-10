@@ -9,7 +9,7 @@ const ContactDetails = () => {
          </h2>
          <p className="mt-6 text-base text-neutral-600">
           If you want to connect with me. Just drop a message
-          by filling out the form beside.
+          by filling out the form.
          </p>
     </FadeIn>
     </>

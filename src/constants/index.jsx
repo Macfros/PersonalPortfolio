@@ -4,9 +4,9 @@ export const navigation = [
   {
     title: "Work",
     links: [
-      { title: "Crafted Visions", href: "/work/amazonclone" },
-      { title: "AmiSocial", href: "/work/bazar" },
-      { title: "hai kuch", href: "/work/blog101" },
+      { title: "Crafted Visions", href: "/work" },
+      { title: "Stayscape", href: "/work" },
+      { title: "AmiSocial", href: "/work" },
       {
         title: (
           <>
@@ -20,9 +20,9 @@ export const navigation = [
   {
     title: "Company",
     links: [
-      { title: "Brickow", href: "/about" },
-      { title: "Celebal Technologies", href: "/process" },
-      { title: "TestBook", href: "/blog" },
+      { title: "Brickow", href: "/experience" },
+      { title: "Celebal Technologies", href: "/experience" },
+      { title: "TestBook", href: "/experience" },
     ],
   },
   {
