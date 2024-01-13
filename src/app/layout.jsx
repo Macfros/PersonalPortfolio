@@ -1,6 +1,7 @@
 
 import './globals.css'
 import RootLayoutsub from "@/components/RootLayoutsub"
+import StarterAnimation from "@/components/StarterAnimation";
 
 
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en"
     className="h-full bg-neutral-950 text-base antialiased text-neutral-100">
       <body className="flex min-h-full flex-col">
+        <StarterAnimation />
       <RootLayoutsub>{children}</RootLayoutsub>
         </body>
     </html>
