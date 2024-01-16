@@ -1,37 +1,40 @@
 "use client";
-
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import clsx from "clsx";
 
 const StarterAnimation = () => {
-    const [isVisible, setIsVisible] = useState(true);
-    const [shouldRender, setShouldRender] = useState(true);
+    const [rendered, setRendered] = useState(false);
+    const [opacity, setOpacity] = useState(1); // State for opacity
 
     useEffect(() => {
         const hasBeenShown = localStorage.getItem('hasBeenShown');
 
         if (!hasBeenShown) {
-            setTimeout(() => {
-                setIsVisible(false); // Start fade-out
+            setRendered(true);
 
-                setTimeout(() => {
-                    setShouldRender(false); // Remove from DOM after fade-out completes
-                    localStorage.setItem('hasBeenShown', true);
-                }, 250); // Matches the CSS transition duration
-            }, 1250);
+            setTimeout(() => {
+                setOpacity(0); // Trigger fade out
+            }, 2500); // Start fade out after 2.5 seconds
+
+            const timer = setTimeout(() => {
+                setRendered(false);
+                localStorage.setItem('hasBeenShown', true);
+            }, 3000); // Fully hide after 3 seconds
+
+            return () => clearTimeout(timer);
         }
     }, []);
 
-    if (!shouldRender) {
-        return null;
-    }
+    const baseClass = 'transition-opacity duration-500 ease-out'; // Transition for opacity
+    const hiddenClass = 'hidden';
 
-    const containerStyle = isVisible
-        ? "transition-opacity duration-250 ease-out opacity-100"
-        : "transition-opacity duration-250 ease-out opacity-0";
+    const classes = clsx(baseClass, {
+        [hiddenClass]: !rendered,
+    });
 
     return (
-        <div className={containerStyle}>
+        <div className={classes} style={{ opacity: opacity }}>
             <div className="text-xl md:text-3xl lg:text-5xl fixed inset-0 flex items-center justify-center z-20 text-black">
                 <div className="bg-black text-white font-display p-8 rounded-md">
                     Click Here to know more!
@@ -60,5 +63,3 @@ const StarterAnimation = () => {
 }
 
 export default StarterAnimation;
-
-
