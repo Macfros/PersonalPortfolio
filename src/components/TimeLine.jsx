@@ -22,7 +22,6 @@ const TimeLine = () => {
            <br />
            Minor in Computer Forensics
            <br />
-           83.4%
          </Timeline.Body>
        </Timeline.Content>
        </FadeIn>
