@@ -22,12 +22,10 @@ export default function Home() {
     <TechStack />
 
     <div className="flex justify-center items-center mt-5 h-20">
-     <Button href={process.env.RESUME_LINK} children="Resume" className="text-5xl h-[50px]
-     w-1/4 md:w-1/5 lg:w-1/6" target="_blank"/>
+     <Button href="/Akhil_Raj-Resume.pdf" children="Resume" className="text-5xl h-[50px]
+     w-1/4 md:w-1/5 lg:w-1/6" target="_blank" download/>
 
     </div>
-
-
     </main>
   )
 }
