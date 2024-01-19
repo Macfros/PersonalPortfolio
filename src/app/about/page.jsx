@@ -22,7 +22,7 @@ const AboutPage = () =>{
      </p>
      <div className="mt-10 max-w-2xl space-y-6 text-base">
        <p>
-         I'm a full stack web developer. My primary tech Stack is MERN. I am also involved in DSA problem solving and have solved over <b>350+</b> questions on coding platforms such as LeetCode and GeeksforGeeks.
+         I'm a full stack web developer. My primary tech Stack is MERN. I am also involved in DSA problem solving and have solved over <b>450+</b> questions on coding platforms such as LeetCode and GeeksforGeeks.
        </p>
        <p>
          My extra curriculars include <b>Public Speaking and Debating</b>. I am a part of public speaking and ebating society at my college and have participated and organised various events.
