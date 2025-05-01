@@ -3,6 +3,7 @@
 import WorkCard from "@/components/WorkCard";
 import PageIntro from "@/components/PageIntro";
 import FadeIn from "@/components/FadeIn";
+import RSK from "@/images/RSK.svg";
 import brikow from "@/images/brikow.svg";
 import celebal from "@/images/celebal.svg";
 import icon from "@/images/icon.svg";
@@ -12,8 +13,21 @@ import Image from "next/image"
 
 const workdes=[
   {
-    title:(<div className="">Brickow</div>),
-    cardTitle: "Frontend Developer",
+    title:(<div className="">RSK Business Solutions</div>),
+    cardTitle: "Backend Developer - Full Time",
+    cardSubtitle: "March 24 - Present",
+    cardDetailedText:(
+      <ul className="flex flex-col gap-4 tracking-wide sm:text-[1rem]">
+        <li>Built .NET Core services with gRPC APIs, reducing inter-service latency by 70% and enabling real-time server log access.</li>
+        <li>Integrated an API Gateway with advanced authorization and caching mechanisms, significantly enhancing security and reducing data retrieval times by 80%.</li>
+        <li>Built an automated PDF generation system, producing reports, invoices, and handbooks with an average processing time of less than 2 seconds per document.</li>
+      </ul>
+    ),
+    logo: RSK,
+  },
+  {
+    title:(<div className="">Briqko</div>),
+    cardTitle: "Frontend Developer - Internship",
     cardSubtitle: "july 23 - Oct 23",
     cardDetailedText:(
       <ul className="flex flex-col gap-4 tracking-wide sm:text-[1rem]">
@@ -26,11 +40,11 @@ const workdes=[
   },
   {
     title:(<div className="">Celebal technologies</div>),
-    cardTitle: "Web Developer",
+    cardTitle: "Web Developer - Internship",
     cardSubtitle: "june 23 - Aug 23",
    cardDetailedText:(
       <ul className="flex flex-col gap-4 tracking-wide sm:text-[1rem]">
-        <li>Collaborated closely with a mentor to acquire in-depth knowledge of React's core concepts, including components, state management, and UI rendering techniques, resulting in a strong foundation.</li>
+        <li>Collaborated closely with a mentor to acquire in-depth knowledge of React core concepts, including components, state management, and UI rendering techniques, resulting in a strong foundation.</li>
         <li>Implemented a full-stack project with CRUD capabilities, showcasing expertise in frontend-backend data flow management and demonstrating end-to-end development skills.</li>
       </ul>
     ),
@@ -39,7 +53,7 @@ const workdes=[
   },
   {
     title:(<div className="">TestBook</div>),
-    cardTitle: "Technical Writer",
+    cardTitle: "Technical Writer - Internship",
     cardSubtitle: "june 22 - Aug 22",
     cardDetailedText:(
       <ul className="flex flex-col gap-4 tracking-wide sm:text-[1rem]">
@@ -56,7 +70,7 @@ const Experience = () => {
   return (
     <FadeIn className="relative">
         <PageIntro eyebrow="" title="My Experiences" className="z-10 bg-red-900">
-       I have completed Internships in the following companies. You can see the timeline of my internships below.
+        My experience spans both frontend and backend technologies, enabling me to build seamless, full-stack web applications from concept to deployment.
        </PageIntro>
        <div>
        <FadeIn>
@@ -79,6 +93,11 @@ const Experience = () => {
              timelinePointDimension={70}
              >
              <div className="chrono-icons">
+                      <Image
+                          src={RSK}
+                          alt="brikow"
+
+                        />
                         <Image
                           src={brikow}
                           alt="brikow"

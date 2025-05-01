@@ -1,25 +1,25 @@
+import dotnet from "../images/dotnet.svg";
 import react from "../images/react.svg";
-import nextjs from "../images/nextjs.svg";
 import nodejs from "../images/nodejs.svg";
-import github from "../images/github.png";
+import java from "../images/java.svg";
 import Mongodb from "../images/Mongodb.png";
 import postgresql from "../images/postgresql.svg";
 import vite from "../images/vite.svg";
-import tailwindcss from "../images/tailwindcss.svg";
+import springboot from "../images/springboot.svg";
 import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 import Image from "next/image";
 
 
 const Tech = [
+  [".NET core", dotnet],
   ["React",react],
-  ["NextJS",nextjs],
   ["NodeJS",nodejs],
   ["MongoDB",Mongodb],
   ["postgresql",postgresql],
   ["Vite",vite],
-  ["TailwindCSS",tailwindcss],
-  ["Github",github],
+  ["Java", java],
+  ["Spring Boot", springboot],
 ]
 const TechStack = () => {
   return (
